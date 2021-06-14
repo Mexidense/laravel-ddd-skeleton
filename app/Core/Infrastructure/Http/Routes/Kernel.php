@@ -25,11 +25,11 @@ final class Kernel extends ServiceProvider
             Route::prefix('api')
                 ->middleware('api')
                 ->namespace($this->namespace)
-                ->group(base_path('api.php'));
+                ->group(__DIR__ . '/api.php');
 
             Route::middleware('web')
                 ->namespace($this->namespace)
-                ->group(base_path('web.php'));
+                ->group(__DIR__ . '/web.php');
         });
     }
 

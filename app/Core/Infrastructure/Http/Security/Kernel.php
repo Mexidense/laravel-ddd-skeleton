@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\Core\Infrastructure\Security;
+namespace App\Core\Infrastructure\Http\Security;
 
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
-final class GeneralAuthentication extends ServiceProvider
+final class Kernel extends ServiceProvider
 {
     protected $policies = [];
 

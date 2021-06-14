@@ -1,20 +1,22 @@
 <?php
 
-namespace App\Http\Middleware;
+declare(strict_types=1);
 
-use App\Providers\RouteServiceProvider;
+namespace App\Core\Infrastructure\Http\Middleware;
+
+use App\Core\Infrastructure\Http\Routes\Kernel;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-class RedirectIfAuthenticated
+final class RedirectIfAuthenticated
 {
     /**
      * Handle an incoming request.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Closure  $next
-     * @param  string|null  ...$guards
+     * @param Request $request
+     * @param Closure $next
+     * @param string|null  ...$guards
      * @return mixed
      */
     public function handle(Request $request, Closure $next, ...$guards)
@@ -23,7 +25,7 @@ class RedirectIfAuthenticated
 
         foreach ($guards as $guard) {
             if (Auth::guard($guard)->check()) {
-                return redirect(RouteServiceProvider::HOME);
+                return redirect(Kernel::HOME);
             }
         }
 

@@ -169,9 +169,7 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Core\Infrastructure\Security\GeneralAuthentication::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        App\Core\Infrastructure\Kernel::class,
 
     ],
 

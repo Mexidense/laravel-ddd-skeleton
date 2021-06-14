@@ -10,8 +10,7 @@ use Illuminate\Support\Facades\Artisan;
 
 final class Kernel extends ConsoleKernel
 {
-    protected $commands = [
-    ];
+    protected $commands = [];
 
     protected function schedule(Schedule $schedule): void
     {

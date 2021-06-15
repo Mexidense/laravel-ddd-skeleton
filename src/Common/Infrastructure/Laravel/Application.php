@@ -17,6 +17,7 @@ final class Application extends \Illuminate\Foundation\Application
     protected function bindPathsInContainer(): void
     {
         $this->instance('path', 'src');
+        $this->instance('path.base', $this->basePath());
         $this->instance('path.lang', __DIR__ . '/resources/lang');
         $this->instance('path.config', __DIR__ . '/config');
         $this->instance('path.public', __DIR__ . '/public');

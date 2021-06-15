@@ -10,10 +10,9 @@
 | the IoC container for the system binding all of the various parts.
 |
 */
-$app = new App\Common\Infrastructure\Application(
-    $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__ . '/../Common')
+$app = new App\Common\Infrastructure\LaravelResources\Application(
+    $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__ . '/../../')
 );
-
 /*
 |--------------------------------------------------------------------------
 | Bind Important Interfaces

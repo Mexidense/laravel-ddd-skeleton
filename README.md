@@ -29,13 +29,13 @@
 - src: Contains code sources of the whole of application.
     - Common/Infrastructure: Contains all of related common infrastructure that the application may need to share.
         - Laravel: Contains required files for Laravel framework. The file paths are set up on Application.php file.
-    - Users: Contains all of related user domain. Following the layered architecture, here we have:
+    - User: Contains all of related user domain. Following the layered architecture, here we have:
         - Infrastructure
         - Application
         - Domain
 - test:
     - Common: All unit and feature tests.
-    - Users: All unit and feature tests.
+    - User: All unit and feature tests.
 
 ```batch
 .
@@ -75,7 +75,7 @@
 │   │               │   ├── testing
 │   │               │   └── views
 │   │               └── logs
-│   └── Users
+│   └── User
 │       ├── Application
 │       ├── Domain
 │       └── Infrastructure
@@ -86,7 +86,7 @@
     ├── Common
     │   ├── Feature
     │   └── Unit
-    └── Users
+    └── User
         ├── Feature
         └── Unit
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Users\Infrastructure\Http\Routes;
+namespace App\User\Infrastructure\Http\Routes;
 
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider;
 use Illuminate\Support\Facades\Route;

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Users\Infrastructure;
+namespace App\User\Infrastructure;
 
-use App\Users\Infrastructure\Http\Routes\Kernel as RouteKernel;
+use App\User\Infrastructure\Http\Routes\Kernel as RouteKernel;
 use Illuminate\Support\ServiceProvider;
 
 final class Kernel extends ServiceProvider

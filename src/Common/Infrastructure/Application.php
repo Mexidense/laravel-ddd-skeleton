@@ -26,7 +26,7 @@ final class Application extends \Illuminate\Foundation\Application
         $this->instance('path.bootstrap', __DIR__ . '/LaravelResources/bootstrap');
     }
 
-    public function setEnvironmentFilePath(): void
+    private function setEnvironmentFilePath(): void
     {
         $this->environmentPath = $this->basePath . '/../../../..';
         Dotenv::createImmutable($this->basePath . '/../../../..')->load();

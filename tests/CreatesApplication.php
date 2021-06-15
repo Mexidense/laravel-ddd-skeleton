@@ -11,7 +11,7 @@ trait CreatesApplication
 {
     public function createApplication(): Application
     {
-        $app = require __DIR__ . '/../src/Common/LaravelResources/bootstrap/app.php';
+        $app = require __DIR__ . '/../src/Common/Infrastructure/LaravelResources/bootstrap/app.php';
 
         $app->make(Kernel::class)->bootstrap();
 

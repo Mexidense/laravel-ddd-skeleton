@@ -24,8 +24,8 @@
     "autoload": {
         "psr-4": {
             "App\\": "src/",
-            "Database\\Factories\\": "src/Common/LaravelResources/database/factories/",
-            "Database\\Seeders\\": "src/Common/LaravelResources/database/seeders/"
+            "Database\\Factories\\": "src/Common/Infrastructure/LaravelResources/database/factories/",
+            "Database\\Seeders\\": "src/Common/Infrastructure/LaravelResources/database/seeders/"
         }
     },
     "autoload-dev": {

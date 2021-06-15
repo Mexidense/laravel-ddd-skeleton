@@ -11,7 +11,7 @@
 |
 */
 $app = new App\Common\Infrastructure\Application(
-    $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__ . '/../..')
+    $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__ . '/../Common')
 );
 
 /*

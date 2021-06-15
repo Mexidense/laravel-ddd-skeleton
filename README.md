@@ -4,7 +4,7 @@
 
 - Clone repository:
     ```batch
-    git clone git@github.com:Mexidense/ddd-laravel-skeleton.git
+    git clone git@github.com:Mexidense/laravel-ddd-skeleton.git
     ```
 
 - Install packages:

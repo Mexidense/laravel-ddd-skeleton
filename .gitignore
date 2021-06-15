@@ -1,6 +1,6 @@
 /node_modules
-/src/Common/Infrastructure/LaravelResources/public/hot
-/src/Common/Infrastructure/LaravelResources/public/storage
+/src/Common/Infrastructure/Laravel/public/hot
+/src/Common/Infrastructure/Laravel/public/storage
 /storage/*.key
 /vendor
 .env

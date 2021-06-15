@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Common\Infrastructure\LaravelResources;
+namespace App\Common\Infrastructure\Laravel;
 
 use Dotenv\Dotenv;
 

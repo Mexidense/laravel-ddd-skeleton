@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "src/",
+            "Common\\": "src/Common/",
             "Database\\Factories\\": "src/Common/Infrastructure/Laravel/database/factories/",
             "Database\\Seeders\\": "src/Common/Infrastructure/Laravel/database/seeders/"
         }

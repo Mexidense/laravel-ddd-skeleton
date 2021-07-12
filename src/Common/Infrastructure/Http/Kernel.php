@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace App\Common\Infrastructure\Http;
+namespace Common\Infrastructure\Http;
 
-use App\Common\Infrastructure\Http\Middleware\Authenticate;
-use App\Common\Infrastructure\Http\Middleware\EncryptCookies;
-use App\Common\Infrastructure\Http\Middleware\PreventRequestsDuringMaintenance;
-use App\Common\Infrastructure\Http\Middleware\RedirectIfAuthenticated;
-use App\Common\Infrastructure\Http\Middleware\TrimStrings;
-use App\Common\Infrastructure\Http\Middleware\TrustProxies;
-use App\Common\Infrastructure\Http\Middleware\VerifyCsrfToken;
+use Common\Infrastructure\Http\Middleware\Authenticate;
+use Common\Infrastructure\Http\Middleware\EncryptCookies;
+use Common\Infrastructure\Http\Middleware\PreventRequestsDuringMaintenance;
+use Common\Infrastructure\Http\Middleware\RedirectIfAuthenticated;
+use Common\Infrastructure\Http\Middleware\TrimStrings;
+use Common\Infrastructure\Http\Middleware\TrustProxies;
+use Common\Infrastructure\Http\Middleware\VerifyCsrfToken;
 use Fruitcake\Cors\HandleCors;
 use Illuminate\Auth\Middleware\AuthenticateWithBasicAuth;
 use Illuminate\Auth\Middleware\Authorize;

@@ -10,7 +10,7 @@
 | the IoC container for the system binding all of the various parts.
 |
 */
-$app = new App\Common\Infrastructure\Laravel\Application(
+$app = new Common\Infrastructure\Laravel\Application(
     $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__ . '/../../')
 );
 /*
@@ -26,17 +26,17 @@ $app = new App\Common\Infrastructure\Laravel\Application(
 
 $app->singleton(
     Illuminate\Contracts\Http\Kernel::class,
-    App\Common\Infrastructure\Http\Kernel::class
+    Common\Infrastructure\Http\Kernel::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Console\Kernel::class,
-    App\Common\Infrastructure\Console\Kernel::class
+    Common\Infrastructure\Console\Kernel::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
-    App\Common\Infrastructure\Http\Exceptions\Handler::class
+    Common\Infrastructure\Http\Exceptions\Handler::class
 );
 
 /*

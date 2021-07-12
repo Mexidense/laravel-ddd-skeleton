@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Common\Infrastructure\Events;
+namespace Common\Infrastructure\Events;
 
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;

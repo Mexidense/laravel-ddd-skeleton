@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Common\Infrastructure\Http\Middleware;
+namespace Common\Infrastructure\Http\Middleware;
 
 use Illuminate\Auth\Middleware\Authenticate as Middleware;
 use Illuminate\Http\Request;

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Common\Infrastructure\Console;
+namespace Common\Infrastructure\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Console\Scheduling\Schedule;

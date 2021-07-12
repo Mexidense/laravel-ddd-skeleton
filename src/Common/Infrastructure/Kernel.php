@@ -2,12 +2,11 @@
 
 declare(strict_types = 1);
 
-namespace App\Common\Infrastructure;
+namespace Common\Infrastructure;
 
-use App\Common\Infrastructure\Events\Kernel as EventKernel;
-use App\Common\Infrastructure\Http\Routes\Kernel as RouteKernel;
-use App\Common\Infrastructure\Http\Security\Kernel as SecurityKernel;
-use App\User\Infrastructure\Kernel as UserDomainKernel;
+use Common\Infrastructure\Events\Kernel as EventKernel;
+use Common\Infrastructure\Http\Routes\Kernel as RouteKernel;
+use Common\Infrastructure\Http\Security\Kernel as SecurityKernel;
 use Illuminate\Support\ServiceProvider;
 
 final class Kernel extends ServiceProvider
@@ -17,8 +16,6 @@ final class Kernel extends ServiceProvider
         $this->app->register(SecurityKernel::class);
         $this->app->register(RouteKernel::class);
         $this->app->register(EventKernel::class);
-
-        $this->app->register(UserDomainKernel::class);
     }
 
     public function boot(): void

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Common\Infrastructure\Http\Routes;
+namespace Common\Infrastructure\Http\Routes;
 
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;

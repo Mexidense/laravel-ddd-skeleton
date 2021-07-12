@@ -169,7 +169,7 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Common\Infrastructure\Kernel::class,
+        Common\Infrastructure\Kernel::class,
 
     ],
 

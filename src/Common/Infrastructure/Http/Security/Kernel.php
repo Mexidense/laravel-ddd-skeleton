@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Common\Infrastructure\Http\Security;
+namespace Common\Infrastructure\Http\Security;
 
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 

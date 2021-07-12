@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Common\Infrastructure\Http\Exceptions;
+namespace Common\Infrastructure\Http\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Common\Infrastructure\Http\Middleware;
+namespace Common\Infrastructure\Http\Middleware;
 
-use App\Common\Infrastructure\Http\Routes\Kernel;
+use Common\Infrastructure\Http\Routes\Kernel;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
